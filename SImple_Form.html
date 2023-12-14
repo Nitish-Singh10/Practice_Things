@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        div {
+            width: 300px;
+            border: 1px solid;
+            margin: auto;
+            margin-top: 30px;
+            padding: 3%;
+            border-radius: 5px;
+        }
+
+        label {
+            font-size: large;
+            padding: 3px;
+        }
+
+        input {
+            width: 94%;
+            padding: 5px;
+        }
+
+        button {
+            padding: 5px 8px;
+            margin-top: 4px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <label for="Fname">First Name</label>
+        <input type="text" id="Fname" placeholder="Your Name">
+        <label for="Mname">Middle Name</label>
+        <input type="text" id="Mname" placeholder="Father Name">
+        <label for="Lname">Last Name</label>
+        <input type="text" id="Lname" placeholder="Surname">
+        <button onclick="submit()">Submit</button>
+    </div>
+    <script>
+        function submit() {
+            var x = document.getElementById("Fname");
+            var x1 = document.getElementById("Mname");
+            var x2 = document.getElementById("Lname");
+            var y = x.value;
+            var y1 = x1.value;
+            var y2 = x2.value;
+            window.alert(y + " " + y1 + " " + y2);
+        }
+    </script>
+</body>
+
+</html>
