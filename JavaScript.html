@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <script >
+      let name = ["Nitish","Sanjana","Vikas","Rohan"];
+      let dep = ["SY CS","SY IT","SY BAF","SY BBI"];
+      let rollno = [1,2,3,4];
+      html = `<h2>Studend data in table</h2><table><tr><th>Name</th><th>Department</th><th>Roll No</th></tr>`
+      for (i=0;i<4;i++){  
+      if(i<4){
+        html += `<tr><td>${name[i]}</td>`;
+          if(i<4){
+            html += `<td>${dep[i]}</td>`;
+            if(i<4){
+              html += `<td>${rollno[i]}</td></tr>`;
+            }
+          }
+      }
+    }
+      html += `</table>`;
+      document.getElementById("demo").innerHTML = html;
+    </script>
+</body>
+</html>
